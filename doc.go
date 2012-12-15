@@ -49,10 +49,10 @@ import (
 )
 
 var (
-	templ  *template.Template                // html template for generated docs
-	style  string                            // css styles to inline
-	match  = regexp.MustCompile(`^\s*//\s?`) // pattern for extracted comments
-	sep    = "/*[docgoseparator]*/"          // replacement for comment groups
+	templ  *template.Template                 // html template for generated docs
+	style  string                             // css styles to inline
+	match  = regexp.MustCompile(`^\s*///\s?`) // pattern for extracted comments
+	sep    = "/*[docgoseparator]*/"           // replacement for comment groups
 	unsep  = regexp.MustCompile(`<div class="comment">/\*\[docgoseparator\]\*/</div>`)
 	outdir = flag.String("outdir", ".", "output directory for docs")
 	resdir = flag.String("resdir", "", "directory containing CSS and templates")
