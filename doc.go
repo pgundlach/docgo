@@ -1,3 +1,5 @@
+// Modified version to use three slashes for extracted comments instead of two.
+
 // docgo is a [Go](http://golang.org) implementation of [Jeremy Ashkenas]
 // (http://github.com/jashkenas)'s [docco] (http://jashkenas.github.com/docco/),
 // a literate-programming-style documentation generator.  Running docgo on your
@@ -56,7 +58,7 @@ var (
 	unsep  = regexp.MustCompile(`<div class="comment">/\*\[docgoseparator\]\*/</div>`)
 	outdir = flag.String("outdir", ".", "output directory for docs")
 	resdir = flag.String("resdir", "", "directory containing CSS and templates")
-	pkg    = "github.com/dhconnelly/docgo" // for locating the resources if not specified
+	pkg    = "github.com/pgundlach/docgo" // for locating the resources if not specified
 )
 
 // ## Generating documentation
